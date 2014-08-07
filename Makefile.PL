@@ -12,6 +12,7 @@ license 'bsd';
 name 'File-Find-Rule-Dicom';
 readme_from 'Dicom.pm';
 requires 'Dicom::File::Detect' => 0.01;
+requires 'File::Find::Rule' => 0;
 requires 'perl' => '5.6.2';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=File-Find-Rule-Dicom';
@@ -24,7 +25,7 @@ test_requires 'Test::NoWarnings' => 0;
 test_requires 'Test::Pod' => 0;
 test_requires 'Test::Pod::Coverage' => 0;
 tests_recursive;
-version '0.01';
+version '0.02';
 
 # Run.
 WriteAll();
